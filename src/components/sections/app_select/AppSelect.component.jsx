@@ -15,6 +15,9 @@ const appSelect = ({ classes, onClick, active }) => (
         <div onClick={onClick('homework')} className={classNames(classes.iconWrapper, {[classes.active]: active === 'homework'})}>
             <i className="fas fa-pen"></i>
         </div>
+        <div onClick={onClick('messages')} className={classNames(classes.iconWrapper, {[classes.active]: active === 'messages'})}>
+            <i className="far fa-comments"></i>
+        </div>
         <div onClick={onClick('settings')} className={classNames(classes.iconWrapper, {[classes.active]: active === 'settings'})}>
             <i className="fas fa-sliders-h"></i>
         </div>
