@@ -1,6 +1,7 @@
 export const styles = {
+    text: { margin: 0},
     heading:{
-        fontSize: '3.5rem',
+        fontSize: 30,
         fontWeight: 300,
     },
 }
