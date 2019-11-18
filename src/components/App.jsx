@@ -1,12 +1,9 @@
-import React from 'react';
-import injectSheet from 'react-jss'
-import { styles } from './App.style';
-import { Dashboard } from './sections';
+import React from "react";
+import classes from "./App.module.scss";
+import { Dashboard } from "./sections";
 
-const app = ({ classes }) => (
+export default _ => (
   <div className={classes.appWrapper}>
     <Dashboard />
   </div>
 );
-
-export default injectSheet(styles)(app);

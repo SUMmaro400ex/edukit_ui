@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import Search from './Search.component';
+import React, { useState } from "react";
+import Search from "./Search.component";
 
-export default class SearchContainer extends Component {
-    state = {collapsed: true}
-    onClick = collapsed => _ => this.setState({ collapsed })
-    render() {
-        return(<Search onClick={this.onClick} collapsed={this.state.collapsed} {...this.props}/>)
-    }
-}
+export default props => {
+  const [collapsed, updateCollapsed] = useState(true);
+  const onClick = collapsed => _ => updateCollapsed(collapsed);
+  return <Search onClick={onClick} collapsed={collapsed} {...props} />;
+};

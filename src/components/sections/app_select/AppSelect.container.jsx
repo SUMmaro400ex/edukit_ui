@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
-import AppSelect from './AppSelect.component';
+import React, { useState } from "react";
+import AppSelect from "./AppSelect.component";
 
-export default class AppSelectContainer extends Component {
-    state = { active: 'users'};
-    onClick = active => _ => {
-        this.setState({ active })
-    }
-    render() {
-        return(
-            <AppSelect onClick={this.onClick} active={this.state.active} />
-        )
-    }
-}
+export default _ => {
+  const [active, updateActive] = useState("users");
+  const onClick = active => _ => {
+    updateActive(active);
+  };
+  return <AppSelect onClick={onClick} active={active} />;
+};

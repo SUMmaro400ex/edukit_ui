@@ -1,0 +1,25 @@
+.app {
+  max-width: 1200px;
+  max-height: 800px;
+  width: 100vw;
+  height: 100vh;
+  background: #cfd8dc;
+  animation: scaleIn 0.8s ease-in;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

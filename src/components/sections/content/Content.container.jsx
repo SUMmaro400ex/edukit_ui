@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
-import { Users } from '../index';
+import React, { useState } from "react";
+import { Users } from "../index";
 
-export default class ContentContainer extends Component {
-    state = { active: 'users'};
-    render() {
-        return({users: <Users />}[this.state.active])
-    }
-}
+export default _ => {
+  const [active] = useState("users");
+  return { users: <Users /> }[active];
+};

@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+}
+.title {
+  color: #455a64;
+  flex: 1;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  background: white;
+  border-bottom: 1px solid #455a64;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.search {
+  margin-left: 1rem;
+  margin-top: 13px;
+  margin-right: 50px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+.userStats {
+  background: white;
+}
+.userCards {
+  overflow: scroll;
+}

@@ -1,0 +1,22 @@
+.searchBox {
+  transition: all 0.4s;
+  max-width: 400px;
+  width: 400px;
+  border-radius: 15px;
+  border: 1px solid #455a64;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  & i {
+    align-self: center;
+  }
+}
+.searchBoxCollapsed {
+  max-width: 30px;
+}
+.input {
+  border: none;
+  width: 90%;
+}

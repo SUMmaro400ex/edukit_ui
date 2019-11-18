@@ -1,14 +1,11 @@
-import React from 'react';
-import injectSheet from 'react-jss';
-import { AppSelect } from '../index';
-import { Content } from '../index';
-import { styles } from './Dashboard.style';
+import React from "react";
+import { AppSelect } from "../index";
+import { Content } from "../index";
+import classes from "./Dashboard.module.scss";
 
-const dashboard = ({ classes }) => (
+export default _ => (
   <div className={classes.app}>
     <AppSelect />
     <Content />
   </div>
 );
-
-export default injectSheet(styles)(dashboard);
